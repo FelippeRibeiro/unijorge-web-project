@@ -61,7 +61,7 @@ nav {
 } */
 
 footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
 }
 
@@ -98,4 +98,10 @@ footer {
 
 .post-right > * {
   width: 50%;
+}
+
+.card {
+  border: solid 1px rgba(0, 0, 0, 0.563);
+  padding: 15px;
+  border-radius: 5px;
 }
