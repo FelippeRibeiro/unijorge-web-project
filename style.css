@@ -133,5 +133,9 @@ footer {
 
   header {
     justify-content: flex-start;
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
   }
 }
