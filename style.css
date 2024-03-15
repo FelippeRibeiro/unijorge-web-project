@@ -116,3 +116,11 @@ footer {
   background: rgb(37, 40, 41);
   border-radius: 10px;
 }
+
+@media screen and (max-width: 1600px) {
+  #post-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 10px;
+  }
+}
