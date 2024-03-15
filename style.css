@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 1.1rem;
 }
 
 body {
@@ -46,6 +47,7 @@ nav {
   /* background-color: white; */
   /* border: black solid 1px; */
   padding: 5px 50px;
+  font-size: 1.3rem;
   font-weight: 700;
 
   /* border-radius: 5px; */
