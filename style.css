@@ -84,7 +84,10 @@ nav {
 
 footer {
   /* position: fixed; */
+  background: rgb(243, 241, 241);
+  margin-top: 100px;
   bottom: 0;
+  padding: 10px 0;
 }
 
 #container {
