@@ -48,6 +48,11 @@ nav {
   height: 100%;
 }
 
+#logo {
+  animation: pulse infinite;
+  animation-duration: 2s;
+}
+
 .logo-container {
   display: flex;
   align-items: center;
