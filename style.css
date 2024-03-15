@@ -97,6 +97,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px 10px;
+  justify-items: center;
 }
 .card {
   animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
@@ -121,6 +122,12 @@ footer {
   #post-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px 10px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  #post-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
