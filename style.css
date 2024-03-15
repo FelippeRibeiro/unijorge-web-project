@@ -130,4 +130,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
+  header {
+    justify-content: flex-start;
+  }
 }
