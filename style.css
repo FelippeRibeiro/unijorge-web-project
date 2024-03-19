@@ -131,6 +131,7 @@ footer {
   justify-items: center;
 }
 .card {
+  width: 28rem;
   animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 1.5s; /* don't forget to set a duration! */
 }
@@ -202,5 +203,8 @@ footer {
   }
   #box {
     overflow-x: auto;
+  }
+  .card {
+    width: 18rem;
   }
 }
