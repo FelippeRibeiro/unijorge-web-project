@@ -178,5 +178,29 @@ footer {
 @media screen and (max-width: 920px) {
   header {
     justify-content: flex-start;
+    flex-direction: column;
+    height: fit-content;
+  }
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-options {
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  #logo {
+    width: 80px;
+  }
+  .nav-options-button {
+    font-size: 1.1rem;
+  }
+  .logo-container {
+    flex-direction: column;
+  }
+  #box {
+    overflow-x: auto;
   }
 }
