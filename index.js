@@ -45,5 +45,5 @@ cards.forEach((card) => {
 
 function handleImage() {
   const speechImage = document.querySelector('#speechImage');
-  speechImage.src = speechStatus ? '/images/audio.png' : '/images/mute.png';
+  speechImage.src = speechStatus ? 'images/audio.png' : 'images/mute.png';
 }
