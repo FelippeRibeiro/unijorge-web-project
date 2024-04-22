@@ -231,3 +231,10 @@ footer {
     width: 18rem;
   }
 }
+
+nav > ul > li > a {
+  list-style: none;
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+}
