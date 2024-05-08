@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 * {
   margin: 0;
   padding: 0;
   font-size: 1.1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Geologica', sans-serif;
 }
 
 dl,
@@ -33,18 +34,20 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 15%;
+  height: 20%;
   background-color: rgb(48, 160, 160);
   /* background-color: white; */
   box-shadow: 0 1px 5px rgb(0, 0, 0);
   margin-bottom: 5px;
   color: white;
 }
+
 nav {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* font-size: 30px; */
   height: 100%;
 }
 
@@ -62,6 +65,7 @@ nav {
 }
 .logo-title {
   margin: 0;
+  font-size: 2rem ;
 }
 .nav-options {
   width: 100%;
@@ -72,9 +76,8 @@ nav {
 
 .nav-options-button {
   padding: 5px 50px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
-  font-family: 'Poppins', sans-serif;
   transition: ease 0.2s;
   animation: fadeInLeft;
   animation-duration: 0.5s;
@@ -86,12 +89,52 @@ nav {
   border-bottom: solid 1px white;
 }
 
+/* FOOTER */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 footer {
-  /* position: fixed; */
-  background: rgb(243, 241, 241);
-  margin-top: 100px;
-  bottom: 0;
-  padding: 10px 0;
+  font-family: 'inter', sans-serif;
+  letter-spacing: 1px;
+  color: white;
+}
+
+#footer-content{
+  background-color: rgb(48, 160, 160 );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  gap: 100px;
+  width: 100%;
+}
+
+#footer-contacts h2{
+  margin-bottom: 0.75rem;
+}
+
+#footer-social-media{
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+#footer-social-media .footer-link{
+  height: 2.5rem;
+  width: 2.5rem;
+  color: white;
+  transition: all 0.4s;
+}
+
+#footer-social-media .footer-link:hover{
+  text-decoration: none;
+  color: #a8a29e;
+  }
+
+#footer-copyright{
+  display:flex;
+ justify-content: center ;
+  background-color: rgb(34, 120, 128);
+  font-weight: 100;
 }
 
 #container {
@@ -112,6 +155,7 @@ footer {
   width: 50px;
   border: none;
   border-radius: 100px;
+  background-color: rgb(48, 160, 160 );
 }
 
 #utils > *:hover {
@@ -140,7 +184,7 @@ footer {
   height: 50px;
   width: 50px;
   border: none;
-  background-color: whitesmoke;
+  background-color: rgb(48, 160, 160 );
   box-shadow: 0 3px 5px rgb(0, 0, 0);
 }
 #scrollToTop:hover {
