@@ -173,6 +173,7 @@ footer {
 
 #pauseSpeech {
   display: none;
+  box-shadow: 0 3px 5px rgb(0, 0, 0);
 }
 
 #scrollToTop {
@@ -281,4 +282,12 @@ nav > ul > li > a {
   text-decoration: none;
   font-size: inherit;
   color: inherit;
+}
+.local-links {
+  text-decoration: none;
+  color: #212529;
+}
+.local-links:hover {
+  color: #0b5ed7;
+  transition: 350ms;
 }
