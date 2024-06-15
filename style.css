@@ -286,6 +286,7 @@ nav > ul > li > a {
 .local-links {
   text-decoration: none;
   color: #212529;
+  transition: 350ms;
 }
 .local-links:hover {
   color: #0b5ed7;
