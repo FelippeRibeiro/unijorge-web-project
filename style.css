@@ -96,43 +96,45 @@ footer {
   font-family: 'inter', sans-serif;
   letter-spacing: 1px;
   color: white;
+  margin-top: 2rem;
 }
 
 #footer-content{
-  background-color: rgb(48, 160, 160 );
+  background-color: rgb(48, 160, 160);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
-  gap: 100px;
+  padding: 24px 24px 12px;
   width: 100%;
 }
 
 #footer-contacts h2{
+  display: flex;
+  justify-content: center;
   margin-bottom: 0.75rem;
 }
 
 #footer-social-media{
   display: flex;
-  gap: 2rem;
-  margin-top: 1.5rem;
+  justify-content: space-around;
+  margin: 0px auto 0px;
 }
 
 #footer-social-media .footer-link{
-  height: 2.5rem;
-  width: 2.5rem;
+  display: flex;
+  padding: 10px;
+  border-radius: 50%;
   color: white;
-  transition: all 0.4s;
+  transition: background 250ms;
 }
 
 #footer-social-media .footer-link:hover{
-  text-decoration: none;
-  color: #a8a29e;
+  background: rgba(255, 255, 255, 0.2);
   }
 
 #footer-copyright{
-  display:flex;
- justify-content: center ;
+  display: flex;
+  justify-content: center;
   background-color: rgb(34, 120, 128);
   font-weight: 100;
 }
@@ -155,7 +157,7 @@ footer {
   width: 50px;
   border: none;
   border-radius: 100px;
-  background-color: rgb(48, 160, 160 );
+  background-color: rgb(48, 160, 160);
 }
 
 #utils > *:hover {
@@ -185,7 +187,7 @@ footer {
   height: 50px;
   width: 50px;
   border: none;
-  background-color: rgb(48, 160, 160 );
+  background-color: rgb(48, 160, 160);
   box-shadow: 0 3px 5px rgb(0, 0, 0);
 }
 #scrollToTop:hover {
@@ -286,9 +288,9 @@ nav > ul > li > a {
 .local-links {
   text-decoration: none;
   color: #212529;
-  transition: 350ms;
+  transition: 250ms;
 }
 .local-links:hover {
   color: #0b5ed7;
-  transition: 350ms;
+  transition: 250ms;
 }
