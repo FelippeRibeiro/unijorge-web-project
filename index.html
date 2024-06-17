@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="dark">
+  <body class="">
     <header class="">
       <div class="logo-container">
         <img src="images/logo.png" id="logo" width="150" alt="Logo da click saúde" />
@@ -614,7 +614,7 @@
     <div id="utils">
       <button id="switch-theme" onclick="switchTheme()"></button>
       <button id="speechValue">
-        <img width="20px" height="20px" src="images/audio.png" id="speechImage" alt="" />
+        <img src="images/audio.svg" id="speechImage" alt="" />
       </button>
       <button id="pauseSpeech">
         <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
@@ -655,5 +655,7 @@
         document.documentElement.scrollTop = 0;
       });
     </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
