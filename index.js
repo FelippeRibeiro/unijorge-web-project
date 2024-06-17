@@ -127,7 +127,14 @@ function handleImage() {
   //Isso é um operador ternário, é algo como um if else, porem em uma linha
   // if expressão ? se verdadeiro : se falso
   //Estou altenando o src do elemento de imagem de acordo com a variavel speechStatus que armazena o valor se o usuario deseja ou não a leitura de tela
-  // se speechStatus for true, eu altero o src para 'images/audio.png'
-  // se speechStatus for false, eu altero o src para 'images/mute.png'
-  speechImage.src = speechStatus ? 'images/audio.png' : 'images/mute.png';
+  // se speechStatus for true, eu altero o src para 'images/audio.svg'
+  // se speechStatus for false, eu altero o src para 'images/mute.svg'
+  speechImage.src = speechStatus ? 'images/audio.svg' : 'images/mute.svg';
+}
+//Aqui é uma função que estou denominando switchMode()
+function switchTheme() {
+  //Aqui estou declarando uma variável (com o mesmo nome da tag para melhor entendimento) que irá receber a tag
+  const body = document.querySelector('body');
+  //Aqui estará trocando o nome da classe do body no HTML para dark 
+  body.classList.toggle('dark');
 }
