@@ -6,14 +6,16 @@
   --primary-bg-color: #30A0A0;
   --bw-footer-bg-color: #227880;
   --switch-bg-url: url(images/moon.svg);
+  --highlight-color: rgba(255, 255, 255, 0.2);
 }
 .dark{
   --default-bg-color: #242424;
   --font-color: #ddd;
   --header-font-color: #ddd;
-  --primary-bg-color: #227880;
-  --bw-footer-bg-color: #14484D;
+  --primary-bg-color: #14484d;
+  --bw-footer-bg-color: #061819;
   --switch-bg-url: url(images/sun.svg);
+  --highlight-color: rgba(0, 0, 0, 0.2);
 }
 * {
   margin: 0;
@@ -40,7 +42,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
   background-color: var(--default-bg-color);
-  transition: 350ms;
+  transition: 300ms;
 }
 
 html {
@@ -104,14 +106,16 @@ nav {
 .nav-options-button:hover {
   /* opacity: 0.5; */
   border-radius: 10px;
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px var(--header-font-color);
 }
 .card-body {
   background-color: var(--default-bg-color);
+  transition: 350ms;
 }
 .card-body > p,
 .card-title {
-  color: var(--font-color)
+  color: var(--font-color);
+  transition: 350ms;
 }
 
 /* FOOTER */
@@ -120,12 +124,13 @@ nav {
 footer {
   font-family: 'inter', sans-serif;
   letter-spacing: 1px;
-  color: white;
+  color: var(--header-font-color);
   margin-top: 2rem;
 }
 
 #footer-content{
   background-color: var(--primary-bg-color);
+  transition: 350ms;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,18 +154,19 @@ footer {
   display: flex;
   padding: 10px;
   border-radius: 50%;
-  color: white;
+  color: var(--header-font-color);
   transition: background 250ms;
 }
 
 #footer-social-media .footer-link:hover{
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--highlight-color);
   }
 
 #footer-copyright{
   display: flex;
   justify-content: center;
   background-color: var(--bw-footer-bg-color);
+  transition: 350ms;
   font-weight: 100;
 }
 
@@ -183,6 +189,7 @@ footer {
   border: none;
   border-radius: 100px;
   background-color: var(--primary-bg-color);
+  transition: 350ms;
 }
 
 #utils > *:hover {
@@ -199,6 +206,7 @@ footer {
 }
 #switch-theme {
   background: var(--primary-bg-color) var(--switch-bg-url) no-repeat center;
+  box-shadow: 0 3px 5px rgb(0, 0, 0);
 }
 
 #pauseSpeech {
@@ -218,9 +226,7 @@ footer {
   background-color: var(--primary-bg-color);
   box-shadow: 0 3px 5px rgb(0, 0, 0);
 }
-#scrollToTop:hover {
-  background-color: #ddd;
-}
+
 
 #post-section {
   display: grid;
