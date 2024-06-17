@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="dark">
     <header class="">
       <div class="logo-container">
         <img src="images/logo.png" id="logo" width="150" alt="Logo da click saúde" />
@@ -583,11 +583,9 @@
     
     <footer>
       <div id="footer-content">
-
         <div id="footer-contacts">
           <h2> CLICK SAÚDE </h2>
           <p> Saúde a um click de distância. </p>
-
           <div id="footer-social-media"> 
             <a href="#" class="footer-link" id="instagram"> 
               <ion-icon name="logo-instagram"></ion-icon>
@@ -604,12 +602,9 @@
             <a href="#" class="footer-link" id="github">
                <ion-icon name="logo-github"></ion-icon>
             </a>
-  
-          
-        </div>
+          </div>
+        </div>    
       </div>
-          
-        </div>
         
         <div id="footer-copyright">
           &copy; Todos direitos reservados 
@@ -617,6 +612,7 @@
     </footer>
 
     <div id="utils">
+      <button id="switch-theme" onclick="switchTheme()"></button>
       <button id="speechValue">
         <img width="20px" height="20px" src="images/audio.png" id="speechImage" alt="" />
       </button>
@@ -659,7 +655,5 @@
         document.documentElement.scrollTop = 0;
       });
     </script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
