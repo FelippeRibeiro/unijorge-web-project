@@ -131,7 +131,7 @@ function handleImage() {
   // se speechStatus for false, eu altero o src para 'images/mute.svg'
   speechImage.src = speechStatus ? 'images/audio.svg' : 'images/mute.svg';
 }
-//Aqui é uma função que estou denominando switchMode()
+//Aqui é uma função que estou denominando switchTheme()
 function switchTheme() {
   //Aqui estou declarando uma variável (com o mesmo nome da tag para melhor entendimento) que irá receber a tag
   const body = document.querySelector('body');
