@@ -209,8 +209,10 @@ footer {
   box-shadow: 0 3px 5px rgb(0, 0, 0);
 }
 
-#pauseSpeech {
+#stopSpeech {
   display: none;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0 3px 5px rgb(0, 0, 0);
 }
 
