@@ -131,10 +131,22 @@ function handleImage() {
   // se speechStatus for false, eu altero o src para 'images/mute.svg'
   speechImage.src = speechStatus ? 'images/audio.svg' : 'images/mute.svg';
 }
+//Função responsável em carregar o tema salvo após carregar todo o conteúdo da página
+document.addEventListener("DOMContentLoaded", () => {
+  //Seleciona o body da página
+  const body = document.querySelector("body");
+  //Busca o tema no localStorage
+  const savedTheme = localStorage.getItem("theme");
+  //Se o tema for dark, colocar dark, Senão, deixa o tema padrão da página que é o claro
+  if (savedTheme === "dark") body.classList.add("dark");
+});
+
 //Aqui é uma função que estou denominando switchTheme()
 function switchTheme() {
   //Aqui estou declarando uma variável (com o mesmo nome da tag para melhor entendimento) que irá receber a tag
   const body = document.querySelector('body');
   //Aqui estará trocando o nome da classe do body no HTML para dark 
   body.classList.toggle('dark');
+  //Guardando o valor do tema no localStorage
+  localStorage.setItem("theme", body.classList.contains("dark") ? "dark" : "light");
 }
