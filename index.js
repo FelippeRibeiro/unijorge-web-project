@@ -3,7 +3,7 @@
 const synth = window.speechSynthesis;
 
 //Aqui estou pegando o botão responsavél por pausar a leitura de tela pelo DOM através do id do elemento
-const pauseButton = document.querySelector('#pauseSpeech');
+const stopButton = document.querySelector('#stopSpeech');
 //Aqui estou pegando o botão responsavel por desligar/ligar a fala pelo DOM através do id do elemento
 const speechButton = document.querySelector('#speechValue');
 
@@ -53,20 +53,20 @@ function speak(text) {
 
   //Estou alterando o CSS do botão de pausa de leitura de tela, esse botão eu peguei na linha 6 através do DOM
   //Aqui eu mostro o botão de pausa de leitura de tela, pois ele fica escondido por padrao
-  pauseButton.style.display = 'block';
+  stopButton.style.display = 'flex';
 
   //Aqui eu adiciono um escutador de evento para quando o evento de fala terminar, eu remover o botão de pausa da tela
   utterance.addEventListener('end', (_) => {
-    pauseButton.style.display = 'none';
+    stopButton.style.display = 'none';
   });
 }
 
 //Aqui estou adicionando um escutador de evento de click para quando eu clicar no botão de pause, eu parar a leitura de tela
-pauseButton.addEventListener('click', (ev) => {
+stopButton.addEventListener('click', (ev) => {
   //Aqui eu cancelo a leitura de tela, atráves da varaivel global da linha 6 que armazena a funcionalidade de leitura de tela
   synth.cancel();
   //Aqui estou alterando novamente o CSS do botão de pause, agora deixando ele invisivel, pois a leitura de tela foi parada
-  pauseButton.style.display = 'none';
+  stopButton.style.display = 'none';
 });
 
 //Aqui estou buscando todos os elementos HTML que tem a classe card, através do DOM
