@@ -640,7 +640,7 @@
         </svg>
       </button>
       <button id="scrollToTop">
-        <img src="./images/scrollTop.svg" alt="">
+        <ion-icon name="arrow-up" id="arrow-up"></ion-icon>
       </button>
     </div>
     <script>
@@ -648,7 +648,7 @@
       const button = document.getElementById('scrollToTop');
       window.onscroll = (ev) => {
         if (document.documentElement.scrollTop > header.getBoundingClientRect().y) {
-          button.style.display = 'block';
+          button.style.display = 'flex';
           button.style.animation = 'fadeIn';
           button.style.animationDuration = '1s';
         } else button.style.display = 'none';
